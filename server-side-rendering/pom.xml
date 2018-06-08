@@ -15,7 +15,7 @@
     </organization>
 
     <name>server-side-rendering</name>
-    <description>This is the com.example.plugins.tutorial:server-side-rendering plugin for Atlassian JIRA.</description>
+    <description>This is an example, that shows how to use soy templates with context provider</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>
@@ -129,6 +129,7 @@
 
                         <!-- Add package import here -->
                         <Import-Package>
+                            com.atlassian.jira.plugin.webfragment.conditions,
                             org.springframework.osgi.*;resolution:="optional",
                             org.eclipse.gemini.blueprint.*;resolution:="optional",
                             *
@@ -166,7 +167,7 @@
     </build>
 
     <properties>
-        <jira.version>7.7.1</jira.version>
+        <jira.version>7.10.0</jira.version>
         <amps.version>6.3.15</amps.version>
         <plugin.testrunner.version>1.2.3</plugin.testrunner.version>
         <atlassian.spring.scanner.version>1.2.13</atlassian.spring.scanner.version>
