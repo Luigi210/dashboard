@@ -17,8 +17,8 @@
         <resource type="download" name="server-side-rendering.css" location="/css/server-side-rendering.css"/>
         <resource type="download" name="server-side-rendering.js" location="/js/server-side-rendering.js"/>
         <resource type="download" name="images/" location="/images"/>
-        <resource type="download" location="soy/dash.soy" name="soy/dash.soy.js"/>
-        <resource type="soy" location="/soy/dash.soy" name="My.Soy.Templates.Example"/>
+        <resource type="download" location="soy/dashboard-item.soy" name="soy/dashboard-item.soy.js"/>
+        <resource type="soy" location="/soy/dashboard-item.soy" name="My.Soy.Templates.Example"/>
         <context>server-side-rendering</context>
         <context>atl.dashboard</context>
     </web-resource>
