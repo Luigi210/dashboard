@@ -6,8 +6,5 @@ pipelines:
         caches:
           - maven
         script:
-          - cd server-side-rendering
           - atlas-version
-          - atlas-mvn clean install
-          - cd ../client-side-rendering
           - atlas-mvn clean install
