@@ -8,15 +8,14 @@ import com.atlassian.plugin.spring.scanner.annotation.component.Scanned;
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.plugin.web.ContextProvider;
 import com.google.common.collect.Maps;
-
 import java.util.Map;
+
 
 @Scanned
 public class DashboardItemContextProvider implements ContextProvider {
     private final PluginAccessor pluginAccessor;
 
-    public DashboardItemContextProvider(
-            @ComponentImport PluginAccessor pluginAccessor) {
+    public DashboardItemContextProvider(@ComponentImport PluginAccessor pluginAccessor) {
         this.pluginAccessor = pluginAccessor;
     }
 
